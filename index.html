@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UH-1N MQF Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="emblem.jpg" alt="54th HS Emblem" class="emblem medium-emblem" />
+    <h1>UH-1N MQF Quiz</h1>
+<button onclick="toggleDarkMode()">Toggle Light/Dark Mode</button>
+
+    <div class="settings">
+      <label><input type="checkbox" id="shuffle"> Shuffle Questions</label>
+      <label><input type="checkbox" id="feedback" checked> Immediate Feedback</label>
+      <label>Questions: <input type="number" id="questionCount" value="10" min="1" max="200" /></label>
+      <button onclick="startQuiz()">Start Quiz</button>
+      <button onclick="resetQuiz()">Reset</button>
+      
+    </div>
+
+    <div id="quizContainer"></div>
+
+    <img src="uh1n-action.jpg" alt="UH-1N in action" class="banner" />
+    <p class="disclaimer">Direct any issues, ideas, or questions to TSgt. Loera</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
